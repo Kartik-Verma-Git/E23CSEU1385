@@ -33,6 +33,27 @@ Error handling and fallback strategy
 
 ---
 
+
+Network Restriction Note
+
+During integration testing, the provided external evaluation APIs were inaccessible from the current network environment due to security/firewall restrictions.
+
+The following message was consistently returned while attempting API authentication and data retrieval:
+
+"The web page you are trying to visit has been blocked in accordance with company policy."
+
+To ensure continued local validation of the backend architecture and scheduling logic, fallback handling and local testing workflows were implemented where necessary.
+
+The core implementation for:
+- authentication flow
+- API integration
+- scheduling optimization
+- backend routing
+- error handling
+
+
+
+
 ## Project Structure
 
 vehicle_maintence_scheduler/
@@ -53,3 +74,6 @@ vehicle_maintence_scheduler/
 
 ```bash
 npm install
+
+
+remains fully implemented within the project.
